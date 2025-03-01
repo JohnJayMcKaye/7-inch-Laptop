@@ -35,18 +35,19 @@ Ein paar Probleme sind allerdings zu lösen:
   in Kernel CMDLINE eintragen z.B. mit `rpm-ostree kargs --editor`
   
 - # Fehlende AltGg Taste kompensieren
-- Das Gerät hat keine AltGr Taste, somit ist es im deutschem Layout z.B. nicht möglich [ ] Eckige Klammern, etc. zu schreiben. 
+- Das Gerät hat keine AltGr Taste, somit ist es im deutschem Layout z.B. nicht möglich [ ] Eckige Klammern, | , etc. zu schreiben. 
 -
 -Die Lösung hierfür ist [NeoQwertz](https://neo-layout.org/Layouts/neoqwertz/)
-- NeoQUERZ-Tasataturlayout aktivieren mit: `gsettings set org.gnome.desktop.input-sources show-all-sources true`
+- NeoQUERZ-Tasataturlayout in der Gnome Layout-Auswahl aktivieren mit: `gsettings set org.gnome.desktop.input-sources show-all-sources true`
 - Ich habe dir eine passende [Tastaturbeschriftung](7inchKeyboardStickerNeoQUERZ.svg) mit Inkscape erstellt, diese musst du nur mit Inkscape öffnen und auf selbstklebender Folie ausdrucken und mit Klebefolie oder Klebeband laminieren, anschließend ausschneiden und aufkleben.
 
 ![](Cyberdeck.jpg)
   
 - # Touchscreen nach Standby wieder aktivieren
 -
--Der Touchsreen geht ab Kernel 6.12 aber nach einem Standby wacht er nicht wieder auf. 
+-Der Touchsreen funktioniert wohl ab Kernel 6.12 aber nach einem Standby wacht er nicht wieder auf. 
 Die Lösung hierfür:
+
 - Script anlegen
   ```
   #!/bin/bash
@@ -75,7 +76,7 @@ Die Lösung hierfür:
   
   `   
   und mit `sudo systemctl enable touchscreen.service` aktivieren  
-	- soll das script auch manuell oder per keyboard shortcut ausgeführt werden ggf. die `sudo visudo` anpassen und 
+	- soll das script auch manuell oder per Keyboard-shortcut ausgeführt werden ggf. die `sudo visudo` anpassen und 
 	  ```
 	  #Touchscreen-dirtyfix
 	  USERNAMEHERE ALL=(ALL) NOPASSWD: /path/to/script/touchscreen.sh
@@ -85,7 +86,7 @@ Die Lösung hierfür:
 	-
 - # Touchkeyboard deaktivieren
 	-
-	- wenn das Onscreen Keyboard aufploppt und das nerft dann kann das hiermit gefixt werden. 
+	- wenn das Onscreen Keyboard aufploppt und dich das nerft dann kann das hiermit gefixt werden:
 	  ```
 	  Touchkeyboard deaktivieren
 	  
@@ -121,5 +122,5 @@ Die Lösung hierfür:
 	  
 	  ```
 # Fatzit
-Alles in allem ein genial kleines Gerät was mit seinen 4-5W stromverbrauch recht lange, etwa 4-5h durch hällt. Die entscheidung anstelle der Maustasten, Keyboard kommands zu verwenden ist dämlich und könnte irgendwann Probleme machen. Mit Gnome 47 startete z.B. die grafische Oberfläche nicht auf grund eines Bugs mit der aktivierten Tastaturmaus. 
-Aber dennoch ein nettes kleines Cyberdeck. 
+Alles in allem ein genial kleines Gerät was mit seinen 4-5W stromverbrauch recht lange, etwa 4-5h durch hällt. Die Entscheidung anstelle der Maustasten, Keyboard_kommandos (Num_5 und Menu) für die Maustasten, zu verwenden ist dämlich und könnte irgendwann Probleme machen. Mit Gnome 47 startete z.B. die grafische Oberfläche nicht auf Grund eines Bugs mit der aktivierten Tastaturmaus. Also schlug mein Test mit Fedora 41 ersteinmal fehl. Ein Ubuntu LTS mit instaliertem Mainline Kernel tut es aber auch erstmal. 
+Aber dennoch ein nettes kleines Cyberdeck zum schmalem Taler. 
