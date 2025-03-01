@@ -3,6 +3,8 @@
 
 #7Zoll #Linux #Notebook #Laptop #Cyberdeck #Chinashit #NeoQuerz #Kingnovy
 
+Getestet 2025 mit Linux Kernel 6.14 Ubuntu 24.04 LTS (Mainline Kernel Update)
+
 Diese kleinen Laptops werden sehr [günstig](https://de.aliexpress.com/w/wholesale-7-inch-laptop.html?spm=a2g0o.home.search.0) mit Windows 11 verkauft und sind hevorragend für Linux geeignet. 
 Leider haben die Laptops keinen eindeutigen Markennamen aber unter dem Begriff 7 Inch Laptop wird man ganz gut fündig. 
 
