@@ -1,9 +1,18 @@
 # 7-inch-Laptop
 7 Inch Laptop, LONGEVINCE 7 Zoll Touchscreen Mini Laptop, Celeron N4000, 12GB RAM - Linux setup
 
-#7Zoll #Linux #Notebook #Laptop #Cyberdeck #Chinashit #NeoQuerz 
+#7Zoll #Linux #Notebook #Laptop #Cyberdeck #Chinashit #NeoQuerz #Kingnovy
 
-Diese kleinen Laptops werden sehr günstig mit Windows 11 verkauft und sind hevorragend für Linux geeignet. 
+Diese kleinen Laptops werden sehr [günstig](https://de.aliexpress.com/w/wholesale-7-inch-laptop.html?spm=a2g0o.home.search.0) mit Windows 11 verkauft und sind hevorragend für Linux geeignet. 
+Leider haben die Laptops keinen eindeutigen Markennamen aber unter dem Begriff 7 Inch Laptop wird man ganz gut fündig. 
+
+Hier ein paar Blogbeiträge die auch interresant seien dürften: 
+
+[cameralabs.com](https://www.cameralabs.com/kingnovy-7in-mini-laptop-review/) -review
+[http://vitor.io](http://vitor.io/notes-7-inch-mini-laptop)
+[paperstack.com](https://paperstack.com/palmtop/) - review
+
+
 Ein paar Probleme sind allerdings zu lösen: 
 ![](7InchCyberdeck.jpg)
 
