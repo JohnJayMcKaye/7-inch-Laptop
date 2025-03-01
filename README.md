@@ -21,6 +21,8 @@ Ein paar Probleme sind allerdings zu lösen:
   in Kernel CMDLINE eintragen z.B. mit `rpm-ostree kargs --editor`  
 - # Fehlende AltGg Taste kompensieren
 - NeoQUERZ-Tasataturlayout aktivieren mit: `gsettings set org.gnome.desktop.input-sources show-all-sources true`
+- Ich habe dir eine passende Tastaturbeschriftung mit Inkscape erstellt, diese musst du nur auf selbstklebender Folie ausdrucken und mir Klebefolie oder Klebeband laminieren, anschließend ausschneiden und aufkleben.
+  
 - # Touchscreen nach Standby wieder aktivieren
 - Script anlegen
   ```
@@ -40,7 +42,7 @@ Ein paar Probleme sind allerdings zu lösen:
   
   [Service]
   Type=oneshot
-  ExecStart=/home/diana/touchscreen.sh
+  ExecStart=/path/to/script/touchscreen.sh
   
   [Install]
   WantedBy=suspend.target
@@ -53,14 +55,14 @@ Ein paar Probleme sind allerdings zu lösen:
 	- soll das script auch manuell oder per keyboard shortcut ausgeführt werden ggf. die `sudo visudo` anpassen und 
 	  ```
 	  #Touchscreen-dirtyfix
-	  USERNAMEHERE ALL=(ALL) NOPASSWD: /home/diana/touchscreen.sh
+	  USERNAMEHERE ALL=(ALL) NOPASSWD: /path/to/script/touchscreen.sh
 	  
 	  ```
 	  hinzufügen  
 	-
 - # Touchkeyboard deaktivieren
 	-
-	-
+	- wenn das Onscreen Keyboard aufploppt und das nerft dann kann das hiermit gefixt werden. 
 	  ```
 	  Touchkeyboard deaktivieren
 	  
@@ -95,3 +97,6 @@ Ein paar Probleme sind allerdings zu lösen:
 	  (chmod +x /full/path/to/hide-script.sh)
 	  
 	  ```
+# Fatzit
+Alles in allem ein genial kleines Gerät was mit seinen 4-5W stromverbrauch recht lange, etwa 4-5h durch hällt. Die entscheidung anstelle der Maustasten, Keyboard kommands zu verwenden ist dämlich und könnte irgendwann Probleme machen. Mit Gnome 47 startete z.B. die grafische Oberfläche nicht auf grund eines Bugs mit der aktivierten Tastaturmaus. 
+Aber dennoch ein nettes kleines Cyberdeck. 
