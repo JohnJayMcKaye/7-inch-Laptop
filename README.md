@@ -79,7 +79,7 @@ Die Lösung hierfür:
   und mit `sudo chmod +x touchscreen.sh` ausführbar  machen  
 - Dann Systemd-unit `sudo nano /etc/systemd/system/touchscreen.service`
    anlegen die nach dem Standby script ausführt  
-  `
+  ```
   [Unit]
   Description=Run script after waking up from suspend
   After=suspend.target
@@ -90,11 +90,8 @@ Die Lösung hierfür:
   
   [Install]
   WantedBy=suspend.target
-  
-  
-  
-  
-  `   
+```
+
   und mit `sudo systemctl enable touchscreen.service` aktivieren  
 	- soll das script auch manuell oder per Keyboard-shortcut ausgeführt werden ggf. die `sudo visudo` anpassen und 
 	  ```
