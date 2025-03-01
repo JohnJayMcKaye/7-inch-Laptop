@@ -1,12 +1,11 @@
 # 7-inch-Laptop
 7 Inch Laptop, LONGEVINCE 7 Zoll Touchscreen Mini Laptop, Celeron N4000, 12GB RAM - Linux setup
 
-#7Zoll #Linux #Notebook #Laptop #Cyberdeck #Chinashit
-
-![](7InchCyberdeck.jpg)
+#7Zoll #Linux #Notebook #Laptop #Cyberdeck #Chinashit #NeoQuerz 
 
 Diese kleinen Laptops werden sehr günstig mit Windows 11 verkauft und sind hevorragend für Linux geeignet. 
 Ein paar Probleme sind allerdings zu lösen: 
+![](7InchCyberdeck.jpg)
 
 
 - # Maussteuerung aktivieren
@@ -20,13 +19,16 @@ Ein paar Probleme sind allerdings zu lösen:
   ```
 - # Display Drehen
 - `fbcon=rotate:1 video=DSI-1:panel_orientation=right_side_up`
-  in Kernel CMDLINE eintragen z.B. mit `rpm-ostree kargs --editor`  
+  in Kernel CMDLINE eintragen z.B. mit `rpm-ostree kargs --editor`
+  
 - # Fehlende AltGg Taste kompensieren
 - Das Gerät hat keine AltGr Taste, somit ist es im deutschem Layout z.B. nicht möglich [ ] Eckige Klammern, etc. zu schreiben. 
 -
 -Die Lösung hierfür ist [NeoQwertz](https://neo-layout.org/Layouts/neoqwertz/)
 - NeoQUERZ-Tasataturlayout aktivieren mit: `gsettings set org.gnome.desktop.input-sources show-all-sources true`
-- Ich habe dir eine passende Tastaturbeschriftung mit Inkscape erstellt, diese musst du nur auf selbstklebender Folie ausdrucken und mit Klebefolie oder Klebeband laminieren, anschließend ausschneiden und aufkleben.
+- Ich habe dir eine passende [Tastaturbeschriftung](7inchKeyboardStickerNeoQUERZ.svg) mit Inkscape erstellt, diese musst du nur mit Inkscape öffnen und auf selbstklebender Folie ausdrucken und mit Klebefolie oder Klebeband laminieren, anschließend ausschneiden und aufkleben.
+
+![](Cyberdeck.jpg)
   
 - # Touchscreen nach Standby wieder aktivieren
 -
