@@ -9,7 +9,9 @@ Leider haben die Laptops keinen eindeutigen Markennamen aber unter dem Begriff 7
 Hier ein paar Blogbeiträge die auch interresant seien dürften: 
 
 [cameralabs.com](https://www.cameralabs.com/kingnovy-7in-mini-laptop-review/) -review
+
 [http://vitor.io](http://vitor.io/notes-7-inch-mini-laptop)
+
 [paperstack.com](https://paperstack.com/palmtop/) - review
 
 
