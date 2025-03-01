@@ -3,6 +3,26 @@
 
 #7Zoll #Linux #Notebook #Laptop #Cyberdeck #Chinashit #NeoQuerz #Kingnovy
 
+💚 Touchscreen
+
+💚 WiFi / Bluetooth
+
+💚 Sound
+
+💚 Kamera
+
+💚 Battery
+
+💚 Display
+
+💚 Standby
+
+🔴 Maus
+
+🔴 kein USB-C
+
+
+
 Getestet 2025 mit Linux Kernel 6.14 Ubuntu 24.04 LTS (Mainline Kernel Update)
 
 Diese kleinen Laptops werden sehr [günstig](https://de.aliexpress.com/w/wholesale-7-inch-laptop.html?spm=a2g0o.home.search.0) mit Windows 11 verkauft und sind hevorragend für Linux geeignet. 
@@ -34,7 +54,7 @@ Ein paar Probleme sind allerdings zu lösen:
 - `fbcon=rotate:1 video=DSI-1:panel_orientation=right_side_up`
   in Kernel CMDLINE eintragen z.B. mit `rpm-ostree kargs --editor`
   
-- # Fehlende AltGg Taste kompensieren
+- # Fehlende AltGr Taste kompensieren
 - Das Gerät hat keine AltGr Taste, somit ist es im deutschem Layout z.B. nicht möglich [ ] Eckige Klammern, | , etc. zu schreiben. 
 -
 -Die Lösung hierfür ist [NeoQwertz](https://neo-layout.org/Layouts/neoqwertz/)
