@@ -3,6 +3,8 @@
 
 #7Zoll #Linux #Notebook #Laptop #Cyberdeck #Chinashit
 
+![](7InchCyberdeck.jpg)
+
 Diese kleinen Laptops werden sehr günstig mit Windows 11 verkauft und sind hevorragend für Linux geeignet. 
 Ein paar Probleme sind allerdings zu lösen: 
 
@@ -20,10 +22,16 @@ Ein paar Probleme sind allerdings zu lösen:
 - `fbcon=rotate:1 video=DSI-1:panel_orientation=right_side_up`
   in Kernel CMDLINE eintragen z.B. mit `rpm-ostree kargs --editor`  
 - # Fehlende AltGg Taste kompensieren
+- Das Gerät hat keine AltGr Taste, somit ist es im deutschem Layout z.B. nicht möglich [ ] Eckige Klammern, etc. zu schreiben. 
+-
+-Die Lösung hierfür ist [NeoQwertz](https://neo-layout.org/Layouts/neoqwertz/)
 - NeoQUERZ-Tasataturlayout aktivieren mit: `gsettings set org.gnome.desktop.input-sources show-all-sources true`
-- Ich habe dir eine passende Tastaturbeschriftung mit Inkscape erstellt, diese musst du nur auf selbstklebender Folie ausdrucken und mir Klebefolie oder Klebeband laminieren, anschließend ausschneiden und aufkleben.
+- Ich habe dir eine passende Tastaturbeschriftung mit Inkscape erstellt, diese musst du nur auf selbstklebender Folie ausdrucken und mit Klebefolie oder Klebeband laminieren, anschließend ausschneiden und aufkleben.
   
 - # Touchscreen nach Standby wieder aktivieren
+-
+-Der Touchsreen geht ab Kernel 6.12 aber nach einem Standby wacht er nicht wieder auf. 
+Die Lösung hierfür:
 - Script anlegen
   ```
   #!/bin/bash
