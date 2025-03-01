@@ -79,9 +79,9 @@ Die Lösung hierfür:
   ```
   und mit `sudo chmod +x touchscreen.sh` ausführbar  machen  
 - Dann Systemd-unit `sudo nano /etc/systemd/system/touchscreen.service`
-   anlegen die nach dem Standby script ausführt  
-  ```
-  [Unit]
+   anlegen die nach dem Standby script ausführt
+   
+  ```[Unit]
   Description=Run script after waking up from suspend
   After=suspend.target
   
@@ -90,13 +90,11 @@ Die Lösung hierfür:
   ExecStart=/path/to/script/touchscreen.sh
   
   [Install]
-  WantedBy=suspend.target
-```
+  WantedBy=suspend.target```
 
   und mit `sudo systemctl enable touchscreen.service` aktivieren  
 	- soll das script auch manuell oder per Keyboard-shortcut ausgeführt werden ggf. die `sudo visudo` anpassen und 
-	  ```
-	  #Touchscreen-dirtyfix
+	  ```#Touchscreen-dirtyfix
 	  USERNAMEHERE ALL=(ALL) NOPASSWD: /path/to/script/touchscreen.sh
 	  
 	  ```
@@ -105,6 +103,7 @@ Die Lösung hierfür:
 - # Touchkeyboard deaktivieren
 	-
 	- wenn das Onscreen Keyboard aufploppt und dich das nervt dann kann das hiermit gefixt werden:
+
 	  ```
 	  Touchkeyboard deaktivieren
 	  
@@ -139,6 +138,7 @@ Die Lösung hierfür:
 	  (chmod +x /full/path/to/hide-script.sh)
 	  
 	  ```
+
 # Fazit
 Alles in Allem ein genial kleines Gerät was mit seinen 4-5W Stromverbrauch recht lange, etwa 4-5h durchhält. Die Entscheidung, vom Hersteller, anstelle der Maustasten, Keyboard_kommandos (Num_5 und Menu) für die Maustasten zu verwenden, ist dämlich und könnte irgendwann, in Zukunft, zu Problemen führen. Mit Gnome 47 startete z.B. die grafische Benutzeroberfläche nicht auf Grund eines Bugs mit der aktivierten Tastaturmaus. Also schlug mein Test mit Fedora 41 ersteinmal fehl. Ein Ubuntu LTS mit instaliertem Mainline-Kernel tut es aber auch erstmal. 
 Aber dennoch ein nettes kleines Cyberdeck zum schmalen Taler. 
