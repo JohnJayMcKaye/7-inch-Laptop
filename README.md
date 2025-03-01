@@ -69,6 +69,7 @@ Ein paar Probleme sind allerdings zu lösen:
 Die Lösung hierfür:
 
 - Script anlegen
+- 
   ```
   #!/bin/bash
   
